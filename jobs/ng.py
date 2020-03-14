@@ -2,11 +2,11 @@ import click
 from flask.cli import with_appcontext
 import sys
 
-@click.command('ok_run', help="ok run.")
+@click.command('ng_run', help="ng run.")
 @with_appcontext
-def ok_run():
-    print("ok")
-    sys.exit(0)
+def ng_run():
+    print("ng")
+    sys.exit(1)
 
 if __name__ == '__main__':
-    ok_run()
+    ng_run()
