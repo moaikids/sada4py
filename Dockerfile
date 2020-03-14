@@ -9,6 +9,8 @@ RUN pip install -r requirements.txt && rm -rf /root/.cache
 
 COPY *.py ./
 COPY apis ./apis
+COPY jobs ./jobs
+COPY imgs ./imgs
 
 EXPOSE 5000
 CMD ["python", "app.py"]

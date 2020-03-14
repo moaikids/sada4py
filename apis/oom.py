@@ -2,7 +2,7 @@ from flask_restplus import Resource
 from flask import request
 from io import BytesIO
 
-filename = './apis/image.png'
+filename = './imgs/image.png'
 
 class OOM(Resource):
     def get(self):
