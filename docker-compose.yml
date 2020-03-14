@@ -1,0 +1,15 @@
+version: '3'
+services:
+  sada4py:
+    build: .
+    image: moaikids/sada4py:latest
+    container_name: sada4py
+    ports:
+      - 5000:5000
+    deploy:
+        resources:
+            limits:
+                memory: 16m
+            reservations:
+                memory: 16m
+
